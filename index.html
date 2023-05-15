@@ -112,25 +112,6 @@
       firstLetterOfLastName = lastName[3];
       console.log(firstLetterOfLastName);
 
-      // Word Blanks
-      function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
-        //Your code below this line
-        let result = "";
-        result +=
-          "The " +
-          myAdjective +
-          " " +
-          myNoun +
-          " " +
-          myVerb +
-          "to the store " +
-          myAdverb;
-        //Your code above this line
-        return results;
-      }
-      // Change the words here to test your function
-      console.log(wordBlanks("dog", "big", "ran", "quickly"));
-
       // Store Multiple Values with Arrays
       let ourArray = ["John, 23"];
       //Only change code below this line
@@ -152,6 +133,92 @@
       // Example
       let ourArrayOne = [50, 60, 70];
       let ourData = ourArrayOne[0]; // equals 50
+
+      let myList = [
+        ["cereal", 3],
+        ["milk", 2],
+        ["bananas", 3],
+        ["juice", 2],
+        ["eggs", 2],
+      ];
+
+      // Write Reusable with Functions
+      // Example
+      function ourReusableFunction() {
+        console.log("Heya, World");
+      }
+      ourReusableFunction();
+
+      function resuableFunction() {
+        console.log("hi world");
+      }
+
+      // Passing Values to Functions with Arguments
+      function ourFunctionWithArguments(a, b) {
+        console.log(a - b);
+      }
+      ourFunctionWithArguments(10, 5); // Outputs 5 (10-5=5)
+
+      // Example
+      function anthrFunctionWithArgs(a, b) {
+        console.log(a * b);
+      }
+      anthrFunctionWithArgs(60, 10);
+
+      // Global Scope and Functions
+
+      let myGlobal = 10;
+
+      function fun1() {
+        // Assign 5 to oopsGlobal Here
+        oopsGlobal = 5;
+      }
+
+      // only change code above this line
+      function fun2() {
+        let output = "";
+        if (typeof myGlobal != "undefined") {
+          output += "myGlobal: " + myGlobal;
+        }
+        if (typeof oopsGlobal != "undefined") {
+          output += " oopsGlobal: " + oopsGlobal;
+        }
+        console.log(output);
+      }
+      fun1();
+      fun2();
+
+      // Local Scope
+      function myLocalScope() {
+        let myLet = 5;
+        console.log(myLet);
+      } //Below this line will show an error because the variable "let" is being defined within the local scope function
+      myLocalScope();
+      // for the error to be resolved, you need to delete line 199
+      console.log(myLet);
+
+      // Global vs Local Scope in Functions
+
+      let outerWear = "tshirt";
+
+      function myOutfit() {
+        return outerWear;
+      }
+      console.log(myOutfit());
+
+      // Return a value from a Function
+
+      function minusSeven(num) {
+        return num - 7;
+      }
+      console.log(minusSeven(10));
+
+      function timesSix(num) {
+        return num * 6;
+      }
+      console.log(timesSix(6));
+
+      // Assignment with a Returned Value
     </script>
   </body>
 </html>
