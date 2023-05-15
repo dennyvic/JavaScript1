@@ -280,6 +280,102 @@
       }
       // change this value to test
       console.log(testEqual(10));
+
+      // Comparison with the Inequality Operator
+      // Setup
+      function testNotEqual(val) {
+        if (val != 99) {
+          return "Not Equal";
+        }
+        return "Equal";
+      }
+      //Change the value below to test
+      console.log(testNotEqual(10));
+
+      //Comparisons with the Logical And Operator
+
+      function testGreaterThan(val) {
+        if (val > 100) {
+          return "Over 100";
+        }
+        if (val > 10) {
+          return "Over 10";
+        }
+        return "10 or Under";
+      }
+
+      console.log(testGreaterThan(10));
+
+      //Comparison with the Greater Than Or Equal To Operator
+
+      function testGreaterOrEqual(val) {
+        if (val >= 20) {
+          return "20 or Over";
+        }
+        if (val >= 10) {
+          return "10 or Over";
+        }
+        return "less than 10";
+      }
+      console.log(testGreaterOrEqual(10));
+
+      // Comparison with the Less Than Operator
+      function testLessThan(val) {
+        if (val < 25) {
+          return "Under 25";
+        }
+        if (val < 55) {
+          return "Under 55";
+        }
+        return "55 or Over";
+      }
+      console.log(testLessThan(10));
+
+      //Comparisons with the Logical And Operator
+
+      function testLogicalAnd(val) {
+        if (val <= 50 && val >= 25) {
+          return "Yes";
+        }
+        return "No";
+      }
+      console.log(testLogicalAnd(10));
+
+      function testLogicalOr(val) {
+        if (val < 10 || val > 20) {
+          return "Outside";
+        }
+        return "Inside";
+      }
+
+      console.log(testLogicalOr(15));
+
+      //Else Statements
+      function testElse(val) {
+        let result = "";
+
+        if (val > 5) {
+          result = "Bigger than 5";
+        } else {
+          val <= 5;
+          result = "5 or Smaller";
+        }
+        return result;
+      }
+
+      // Else If Statements
+      function testElseIf(val) {
+        if (val > 10) {
+          return "Greater Than 10";
+        } else if (val < 5) {
+          return "Smaller than 5";
+        } else {
+          return "Between 5 and 10";
+        }
+      }
+      testElseIf(7);
+
+      //Logical order in If Else Statements @ 1:23:33 in video
     </script>
   </body>
 </html>
