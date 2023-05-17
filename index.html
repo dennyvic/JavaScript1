@@ -523,24 +523,57 @@
         return answer;
       }
 
-      switch (val) {
-        case "bob":
-          answer = "marley";
-          break;
-        case "42":
-          answer = "the answer";
-          break;
-        case "1":
-          answer = "there is no #1";
-          break;
-        case "99":
-          answer = "missed me by this much";
-          break;
-        case "7":
-          answer = "ate nine";
-          break;
+      // Returning Boolean Values from Functions 1:42:19
+
+      function isLess(a, b) {
+        return a < b;
       }
-      // above line 543 through 508 same section
+      console.log(isLess(10, 15));
+
+      //Returning Early Pattern from Functions
+      function abTest(a, b) {
+        if (a < 0 || b < 0) {
+          return undefined;
+        }
+        return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+      }
+
+      console.log(abTest(-2, 2));
+
+      // Counting Cards
+      let count = 0;
+      function cc(card) {
+        switch (card) {
+          case 2:
+          case 3:
+          case 4:
+          case 5:
+          case 6:
+            count++;
+            break;
+          case 10:
+          case "J":
+          case "Q":
+          case "K":
+          case "A":
+            count--;
+            break;
+        }
+        let holdbet = "hold";
+        if (count > 0) {
+          holdbet = "Bet";
+        }
+        return count + " " + holdbet;
+      }
+
+      cc(2);
+      cc(3);
+      cc(7);
+      cc("K");
+      cc("A");
+      console.log(cc(4));
+
+      //Build JavaScript Objects
     </script>
   </body>
 </html>
