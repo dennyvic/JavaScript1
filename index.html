@@ -574,6 +574,82 @@
       console.log(cc(4));
 
       //Build JavaScript Objects
+      let ourDog = {
+        name: "Camper",
+        legs: 4,
+        tails: 1,
+        friends: ["everything!"],
+      };
+
+      let myDog = {
+        name: "Lottie",
+        legs: 3,
+        tails: 2,
+        friends: ["mama and papa"],
+      };
+
+      //Build Objects with Dot Notation
+
+      let testObj = {
+        hat: "ballcap",
+        shirt: "jersey",
+        shoes: "cleats",
+      };
+
+      let hatValue = testObj.hat;
+      let shirtValue = testObj.shirt;
+
+      //Bracket Notation
+
+      let testObje = {
+        "an entree": "hamburger",
+        "my side": "veggies",
+        "the drink": "water",
+      };
+
+      let entreeValue = testObje["an entree"];
+      let drinkValue = testObje["the drink"];
+
+      //Accessing Object Properties with Bracket Notation
+      //NOTE that bracket notation is required when a property has a space in it (lines 618-620)
+
+      let testObjec = {
+        "an entree": "hamburger",
+        "my side": "veggies",
+        "the drink": "water",
+      };
+
+      let entreeVal = testObjec["an entree"];
+      let drinkVal = testObjec["the drink"];
+
+      //Accessing Object Properties with Variables
+      let testObject = {
+        12: "Namath",
+        16: "Montana",
+        19: "Unitas",
+      };
+
+      let playerNumber = 16;
+      let player = testObject[playerNumber];
+
+      //Updating Object Properties
+      let ourCat = {
+        name: "Jeepers",
+        legs: 4,
+        tails: 1,
+        friends: ["none"],
+      };
+
+      ourCat.name = "mean Jeepers";
+
+      let myCat = {
+        name: "George",
+        legs: 4,
+        tails: 1,
+        friends: ["zero"],
+      };
+
+      myCat.name = "mean george";
     </script>
   </body>
 </html>
