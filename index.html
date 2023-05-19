@@ -585,44 +585,71 @@
         name: "Lottie",
         legs: 3,
         tails: 2,
-        friends: [],
+        friends: ["mama and papa"],
       };
 
-      //Accessing Object Properties with Dot Notation
+      //Build Objects with Dot Notation
 
-      let testObje = {
+      let testObj = {
         hat: "ballcap",
         shirt: "jersey",
         shoes: "cleats",
       };
 
-      let hatValue = testObje.hat;
-      let shirtValue = testObje.shirt;
+      let hatValue = testObj.hat;
+      let shirtValue = testObj.shirt;
 
-      //Accessing Object Properties with Bracket Notation
+      //Bracket Notation
 
-      let testObj = {
+      let testObje = {
         "an entree": "hamburger",
         "my side": "veggies",
         "the drink": "water",
       };
 
-      //Testing Objects for Properties
-      let myObject = {
-        gift: "pony",
-        pet: "kitten",
-        bed: "sleigh",
+      let entreeValue = testObje["an entree"];
+      let drinkValue = testObje["the drink"];
+
+      //Accessing Object Properties with Bracket Notation
+      //NOTE that bracket notation is required when a property has a space in it (lines 618-620)
+
+      let testObjec = {
+        "an entree": "hamburger",
+        "my side": "veggies",
+        "the drink": "water",
       };
 
-      function checkObj(checkProp) {
-        if (myObj.hasOwnProperty(checkProp)) {
-          return myObject[checkProp];
-        } else {
-          return "Not Found";
-        }
-      }
+      let entreeVal = testObjec["an entree"];
+      let drinkVal = testObjec["the drink"];
 
-      console.log(checkObj("gift"));
+      //Accessing Object Properties with Variables
+      let testObject = {
+        12: "Namath",
+        16: "Montana",
+        19: "Unitas",
+      };
+
+      let playerNumber = 16;
+      let player = testObject[playerNumber];
+
+      //Updating Object Properties
+      let ourCat = {
+        name: "Jeepers",
+        legs: 4,
+        tails: 1,
+        friends: ["none"],
+      };
+
+      ourCat.name = "mean Jeepers";
+
+      let myCat = {
+        name: "George",
+        legs: 4,
+        tails: 1,
+        friends: ["zero"],
+      };
+
+      myCat.name = "mean george";
     </script>
   </body>
 </html>
