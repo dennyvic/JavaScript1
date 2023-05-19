@@ -574,6 +574,55 @@
       console.log(cc(4));
 
       //Build JavaScript Objects
+      let ourDog = {
+        name: "Camper",
+        legs: 4,
+        tails: 1,
+        friends: ["everything!"],
+      };
+
+      let myDog = {
+        name: "Lottie",
+        legs: 3,
+        tails: 2,
+        friends: [],
+      };
+
+      //Accessing Object Properties with Dot Notation
+
+      let testObje = {
+        hat: "ballcap",
+        shirt: "jersey",
+        shoes: "cleats",
+      };
+
+      let hatValue = testObje.hat;
+      let shirtValue = testObje.shirt;
+
+      //Accessing Object Properties with Bracket Notation
+
+      let testObj = {
+        "an entree": "hamburger",
+        "my side": "veggies",
+        "the drink": "water",
+      };
+
+      //Testing Objects for Properties
+      let myObject = {
+        gift: "pony",
+        pet: "kitten",
+        bed: "sleigh",
+      };
+
+      function checkObj(checkProp) {
+        if (myObj.hasOwnProperty(checkProp)) {
+          return myObject[checkProp];
+        } else {
+          return "Not Found";
+        }
+      }
+
+      console.log(checkObj("gift"));
     </script>
   </body>
 </html>
