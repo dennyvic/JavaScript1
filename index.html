@@ -740,8 +740,55 @@
 
         return collection;
       }
-
+      updateRecords(2468, "tracks", "test");
       console.log(updateRecords(5439, "artist", "ABBA"));
+
+      //Iterate with While Loops
+
+      let myArrayy = [];
+
+      let i = 0;
+      while (i < 5) {
+        myArrayy.push(i);
+        i++;
+      }
+      console.log(myArrayy);
+
+      //Iterate with For Loops
+
+      let ourArrayy = [];
+
+      for (let i = 0; i < 5; i++) {
+        ourArrayy.push(i);
+      }
+
+      let my_Array = [];
+
+      for (let i = 1; i < 6; i++) {
+        console.log("i is: ", i);
+        my_Array.push(i);
+        console.log("is now: ", my_Array);
+      }
+
+      console.log(my_Array);
+
+      //Iterate Odd Numbers with a For Loop
+
+      let oneArray = [];
+
+      for (let i = 0; i < 10; i += 2) {
+        oneArray.push(i);
+      }
+
+      console.log(oneArray);
+
+      let myArrayOn = [];
+
+      for (let i = 1; i < 10; i += 2) {
+        myArrayOn.push(i);
+      }
+
+      console.log(myArrayOn);
     </script>
   </body>
 </html>
