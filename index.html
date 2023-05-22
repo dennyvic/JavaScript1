@@ -851,6 +851,55 @@
 
       console.log(product);
       //Iterate with Do... While Loops
+
+      let anArray = [];
+      let x = 10;
+
+      do {
+        anArray.push(i);
+        i++;
+      } while (x < 5);
+
+      console.log(x, anArray);
+
+      // Profile Lookup: Coding Challenge
+
+      let contacts = [
+        {
+          firstName: "Akira",
+          lastName: "Laine",
+          number: "1234",
+          likes: ["pizza", "chocolate"],
+        },
+        {
+          firstName: "Emma",
+          lastName: "Lai",
+          number: "1235666666",
+          likes: ["pizza", "brownies"],
+        },
+        {
+          firstName: "Micha",
+          lastName: "Lee",
+          number: "12223444444",
+          likes: ["thai", "yuzu"],
+        },
+        {
+          firstName: "Mike",
+          lastName: "Jones",
+          number: "12222255555234",
+          likes: ["chinese", "gummies"],
+        },
+
+        function lookupProfile(name, prop) {
+          for (let i = 0; i < contacts.length; i++) {
+            if (contacts[i].firstName === name) {
+              return contacts[i][prop] || "no such property";
+            }
+          }
+          return "no such contact";
+        },
+      ];
+      console.log(data);
     </script>
   </body>
 </html>
